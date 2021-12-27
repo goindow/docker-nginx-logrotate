@@ -7,6 +7,7 @@ nginx[docker] 容器日志切割、打包、压缩包维护 shell
 - 多项目 [a/b/.log  a/c/.log...] for php-nginx frame
 
 ## 用法
+- 路径和 nginx 容器名依据各自服务器情况替换
 ```bash
 0 0 * * * /data/php-nginx/sh/docker_nginx_logrotate.sh php-nginx_nginx_1 /data/php-nginx/nginx/logs/ &> /dev/null
 ```
