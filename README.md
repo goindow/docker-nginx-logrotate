@@ -1,4 +1,4 @@
-# docker_nginx_log_cutting
+# docker_nginx_logrotate
 nginx[docker] 容器日志切割、打包、压缩包维护 shell
 
 ## 特性
@@ -8,9 +8,9 @@ nginx[docker] 容器日志切割、打包、压缩包维护 shell
 
 ## 用法
 ```bash
-0 0 * * * /data/php-nginx/sh/docker_nginx_log_cutting.sh php-nginx_nginx_1 /data/php-nginx/nginx/logs/ &> /dev/null
+0 0 * * * /data/php-nginx/sh/docker_nginx_logrotate.sh php-nginx_nginx_1 /data/php-nginx/nginx/logs/ &> /dev/null
 ```
 
 ## 相关链接
-[独立安装版](https://github.com/goindow/nginx_log_cutting/blob/master/README.md)
+[独立安装版](https://github.com/goindow/nginx-logrotate)
 
