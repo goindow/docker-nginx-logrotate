@@ -1,13 +1,4 @@
 #!/bin/bash
-# ----------------------------------------------------------------------------------------------------
-# Filename:      docker_nginx_log_cutting.sh
-# Version:       1.0
-# Date:          2020.6.2
-# Author:        hyb
-# Description:   nginx[docker] 容器日志切割、打包、删除过期压缩包脚本，支持多项目切割打包
-# Notes:         配合 crontab 计划任务，每天零时对日志打包
-#                0 0 * * * [PATH]/docker_nginx_log_cutting.sh container_name project_dir &> /dev/null
-# ----------------------------------------------------------------------------------------------------
 
 # .log 日志文件名
 access_log="access.log"
